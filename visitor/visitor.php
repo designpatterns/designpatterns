@@ -98,6 +98,3 @@ $emailLogger->log();
 
 // In conclusion I think Visitor pattern is more a Hack rather than way to
 // structure classes relationship in a daily basis.. What do you think?
-//
-// Check out this same example but implemented in Decorator pattern:
-// http://ideone.com/KEGRhQ
