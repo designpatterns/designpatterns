@@ -59,4 +59,5 @@ $price = 100;
 $grandPrice = Checkout::calculate($price, new EuropePricingStrategy(),
                                           new VipPricingStrategy() );
 
+// Returns: The total price is 110 instead of 100
 echo "The total price is $grandPrice instead of $price";
