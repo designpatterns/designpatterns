@@ -10,6 +10,16 @@ Our mission
 We tend to build the most full and up-to-date collection of good quality
 examples and recommendations on use for all known Programming Design Patterns
 
+Collaborating
+-------------
+
+To start collaborating:
+
+- fork this repo, create a branch, checkout that branch, apply your work,
+  push the branch to Github, and send a pull request; or,
+
+- create a ticket to start a discussion on Github
+
 License
 -------
 
