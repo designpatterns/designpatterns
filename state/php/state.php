@@ -1,5 +1,5 @@
 <?php
-// set the interface for out available states
+// set the interface for our available states
 interface CarColorStateInterface {
     public function showColor($context_in);
 }
@@ -16,7 +16,7 @@ class CarColorStateBlack implements CarColorStateInterface {
     }
 }
 
-//state for red color, changed only after 2 instances
+//state for red color, changes only after 2 instances
 class CarColorStateRed implements CarColorStateInterface {
     private $count = 0; 
 	
@@ -37,7 +37,7 @@ class CarColorStateRed implements CarColorStateInterface {
 class CarContext {
     private $car = NULL;
     private $carColorState = NULL; 
-    //bookList is not instantiated at construct time
+    
     public function __construct($car) {
       $this->car = $car;
       $this->setColorState(new CarColorStateRed());
@@ -80,7 +80,7 @@ echo($context->getCarColor());
 echo('<br>');
 echo($context->getCarColor());
 
-// red finished, and setet the black state, witch run once, and sets the red color again..
+// red finished, and sets the black state, which run once, and sets the red color again..
 echo('<br>');
 echo($context->getCarColor());
 
