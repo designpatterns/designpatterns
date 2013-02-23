@@ -20,6 +20,18 @@ To start collaborating:
 
 - create a ticket to start a discussion on Github
 
+Credits
+-------
+
+Our work is based on external resources pretty much. Just a few of them are:
+
+- [Agile Design Patterns](https://tutsplus.com/course/agile-design-patterns/)
+  course by [Csaba Patkós](https://twitter.com/PatkosCsaba)
+- [Design Patterns](http://www.cs.sjsu.edu/~pearce/modules/patterns/) by Jon
+  Pearce
+- [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
+- [StackOverflow](http://http://stackoverflow.com)
+
 License
 -------
 
