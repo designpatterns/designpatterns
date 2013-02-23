@@ -29,6 +29,7 @@ Our work is based on external resources pretty much. Just a few of them are:
   course by [Csaba Patkós](https://twitter.com/PatkosCsaba)
 - [Design Patterns](http://www.cs.sjsu.edu/~pearce/modules/patterns/) by Jon
   Pearce
+- [State Design Pattern] (http://sourcemaking.com)
 - [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 - [StackOverflow](http://http://stackoverflow.com)
 
