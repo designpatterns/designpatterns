@@ -21,6 +21,11 @@ platform-dependent code in single class.
 If the answer to following questions is "yes", then most likely you should use
 this pattern:
 
+- Is there any persistence in your application (database, remote service,
+  filesystem, etc.)?
+- Are you going to introduce multiple types of persistence?
+- Do you want to keep your business logic be independent on which type of
+  persistence is used?
 
 ### Resources
 
