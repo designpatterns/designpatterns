@@ -27,8 +27,12 @@ Our work is based on external resources pretty much. Just a few of them are:
 
 - [Agile Design Patterns](https://tutsplus.com/course/agile-design-patterns/)
   course by [Csaba Patkós](https://twitter.com/PatkosCsaba)
-- [Design Patterns](http://www.cs.sjsu.edu/~pearce/modules/patterns/) by Jon
-  Pearce
+- [Design Patterns](http://www.cs.sjsu.edu/~pearce/modules/patterns/) by
+  [Jon Pearce](http://www.cs.sjsu.edu/~pearce/pearce.html)
+- [Design Patterns](http://sourcemaking.com/design_patterns) by
+  [SourceMaking.com](http://sourcemaking.com)
+- [Catalog of Patterns](http://martinfowler.com/eaaCatalog/) by
+  [Martin Fowler](https://twitter.com/martinfowler)
 - [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 - [StackOverflow](http://http://stackoverflow.com)
 
