@@ -20,6 +20,29 @@ To start collaborating:
 
 - create a ticket to start a discussion on Github
 
+Using examples
+--------------
+
+### PHP
+
+We're using [Composer](http://getcomposer.org) to resolve dependencies for our
+PHP examples and tests. 
+To run example called `something` in `state` pattern, change directory to
+`state/php`, make sure to install all dependencies:
+
+```
+composer install
+```
+
+and execute test suit:
+
+```
+vendor/bin/phpunit test/something_test.php
+```
+
+This will execute test the suit agains an example found in
+`state/php/examples/something.php`
+
 Credits
 -------
 
