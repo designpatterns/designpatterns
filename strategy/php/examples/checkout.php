@@ -1,4 +1,4 @@
-<?php
+<?php namespace DesignPatterns\State\Examples\Checkout;
 
 /*
  * Strategy Pattern in example with Pricing Calculations
@@ -50,14 +50,6 @@ class Checkout {
 }
 
 
-////////////
-// Usage
+////////////////////////////////////////////////////////////////////////////
+// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
 //
-$price = 100;
-// Of course instead of Europe and VIP we could add more strategies and mix
-// them up without touching the Checkout class itself - beautiful!
-$grandPrice = Checkout::calculate($price, new EuropePricingStrategy(),
-                                          new VipPricingStrategy() );
-
-// Returns: The total price is 110 instead of 100
-echo "The total price is $grandPrice instead of $price";
