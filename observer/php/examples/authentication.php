@@ -1,4 +1,4 @@
-<?php
+<?php namespace DesignPatterns\State\Examples\Authentication;
 
 /*
  * Observer Pattern in example with Authentication system
@@ -53,27 +53,30 @@ interface Observer {
 }
 // Implement specific Observer - AuthSpyObserver
 class AuthSpyObserver implements Observer {
+  private $notified;
   // This method will be run each time Auth Class will decide to notify it
   public function run( Observable $sender, $args ) {
-    echo '<p>now spying after "' . $sender->getUsername() . '" because he just was authenticated</p>';
+    // now spying after $sender->getUsername() because he just was authenticated
+    $this->notified = true;
+  }
+  public function wasNotified() {
+    return $this->notified;
   }
 }
 // Implement another specific Observer - AuthMessagerObserver
 class AuthMessagerObserver implements Observer {
+  private $notfied;
   // This method will be run each time Auth Class will decide to notify it
   public function run( Observable $sender, $args ) {
-    echo '<p>sending an email to "' . $sender->getUsername() . '" after successfull authentication</p>';
+    // sending an email to $sender->getUsername() after successfull authentication
+    $this->notified = true;
+  }
+  public function wasNotified() {
+    return $this->notified;
   }
 }
 
-
-////////////
-// Usage
+////////////////////////////////////////////////////////////////////////////
+// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
 //
-
-
-$auth = new Auth();
-$auth->attach( new AuthSpyObserver() );
-$auth->attach( new AuthMessagerObserver() );
-$auth->login('foo', 'bar'); // if success - it will notify, else nothing will happen
 
