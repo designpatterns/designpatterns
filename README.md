@@ -37,7 +37,7 @@ composer install
 and execute test suit:
 
 ```
-vendor/bin/phpunit test/something_test.php
+vendor/bin/phpunit tests/something_test.php
 ```
 
 This will execute test the suit agains an example found in
