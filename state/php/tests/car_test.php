@@ -1,6 +1,6 @@
 <?php
 
-require 'example/car.php';
+require 'examples/car.php';
 use \DesignPatterns\State\Example\Car as Example;
 
 class CarStateTest extends PHPUnit_Framework_TestCase
