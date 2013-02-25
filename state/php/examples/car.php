@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Example\Car;
+<?php namespace DesignPatterns\State\Examples\Car;
 
 /*
  * State Pattern in example with Car color Brush
@@ -62,6 +62,6 @@ class Car {
 }
 
 ////////////////////////////////////////////////////////////////////////////
-// Usage is demonstrated in ./test/%FILENAME_WITHOUT_EXTENSION%_test.php
+// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
 //
 

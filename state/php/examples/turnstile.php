@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Example\Turnstile;
+<?php namespace DesignPatterns\State\Examples\Turnstile;
 
 /*
  * State Pattern in classic example with Turnstile
@@ -63,6 +63,6 @@ class Turnstile {
 }
 
 ////////////////////////////////////////////////////////////////////////////
-// Usage is demonstrated in ./test/%FILENAME_WITHOUT_EXTENSION%_test.php
+// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
 //
 

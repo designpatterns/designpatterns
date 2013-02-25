@@ -1,7 +1,7 @@
 <?php
 
 require 'examples/car.php';
-use \DesignPatterns\State\Example\Car as Example;
+use \DesignPatterns\State\Examples\Car as Example;
 
 class CarStateTest extends PHPUnit_Framework_TestCase
 {
