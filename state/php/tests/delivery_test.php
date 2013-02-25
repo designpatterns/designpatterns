@@ -1,7 +1,7 @@
 <?php
 
 require 'examples/delivery.php';
-use \DesignPatterns\State\Example\Delivery as Example;
+use \DesignPatterns\State\Examples\Delivery as Example;
 
 class DeliveryStateTest extends PHPUnit_Framework_TestCase
 {
