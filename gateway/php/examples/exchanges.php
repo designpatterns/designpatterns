@@ -1,4 +1,4 @@
-<?php
+<?php namespace DesignPatterns\State\Examples\Exchanges;
 
 /*
  * Gateway Pattern in example with betting exchanges
@@ -19,9 +19,15 @@ interface ExchangeInterface {
 // to send to and receive data from Betting Exchanges
 // to place and retrieve Bets
 class ExchangeXGateway implements ExchangeInterface {
+  private $bet = array();
+
   function placeBet( $bet = array() ) {
     // send request to ExchangeX API
-    echo "sending a bet to ExchangeX \n";
+    // and save it in local property
+    $this->bet = $bet;
+  }
+  function retrieveLastBet() {
+    return $this->bet;
   }
   function retrieveFunds() {
     // send request to ExchangeX API and return response..
@@ -30,9 +36,15 @@ class ExchangeXGateway implements ExchangeInterface {
 }
 // Just for a better example let's define second Exchange Gateway
 class ExchangeYGateway implements ExchangeInterface {
+  private $bet = array();
+
   function placeBet( $bet = array() ) {
     // send request to ExchangeY API
-    echo "sending a bet to ExchangeY \n";
+    // and save it in local property
+    $this->bet = $bet;
+  }
+  function retrieveLastBet() {
+    return $this->bet;
   }
   function retrieveFunds() {
     // send request to ExchangeY API and return response..
@@ -53,37 +65,16 @@ class Exchange implements ExchangeInterface {
     $this->gateway->placeBet( $bet );
   }
 
+  function retrieveLastBet() {
+    return $this->gateway->retrieveLastBet();
+  }
+
   function retrieveFunds() {
     return $this->gateway->retrieveFunds();
   }
 }
 
-
-////////////
-// Usage
+////////////////////////////////////////////////////////////////////////////
+// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
 //
 
-// Place a bet in ExchangeX
-$exchangeX = new Exchange( new ExchangeXGateway );
-$exchangeX->placeBet(array(
-  'market_id'     => 11239,
-  'selection_id'  => 2,
-  'price'         => 3.1,
-  'size'          => 35,
-  'type'          => 'B'
-));
-
-// Place another bet in ExchangeY
-$exchangeY = new Exchange( new ExchangeYGateway );
-$exchangeY->placeBet(array(
-  'market_id'     => 1982,
-  'selection_id'  => 6,
-  'price'         => 3.0,
-  'size'          => 10,
-  'type'          => 'L'
-));
-
-// Just for fun, let's print Funds we have left in both Exchanges
-// after trying to catch Arbitrage situations
-echo "ExchangeX funds: " . $exchangeX->retrieveFunds() . "\n";
-echo "ExchangeY funds: " . $exchangeY->retrieveFunds() . "\n";
