@@ -1,19 +1,27 @@
 <?
+//interface for a car
+interface Car {
+	public function getDetails();
+}
+
+//Exception class so the exception can be tested
+class CarException extends Exception{}
+
 //all the car classes somewhere in the "cars" folder & namespace
-	class mercedes {
-		public function __construct(){
-			echo 'new Mercedes car created';
+	class mercedes implements Car{
+		public function getDetails(){
+			return 'new Mercedes car created';
 		}
 	}
 
-	class bmw{
-		public function __construct(){
-			echo 'new BMW car created';
+	class bmw implements Car{
+		public function getDetails(){
+			return 'new BMW car created';
 		}
 	}
-	class ferari{
-		public function __construct(){
-			echo 'new Ferari car created';
+	class ferari implements Car{
+		public function getDetails(){
+			return 'new Ferari car created';
 		}
 	}	
 
@@ -25,18 +33,20 @@ class CarsFactory
   {
      // by the cars name, you may include the correct file, ot autoload it.
      if(!class_exists($name))
-        throw new Exception ('this car not exist');
+        throw new CarException ('this car not exist');
         
-        return new $name;
+     	$car = new $name;
+        return $car->getDetails();
   }
 }
 
 
 try {
-    $myBmw = CarsFactory::create('bmw');
+    $myCar = CarsFactory::create('bmw');
+    echo $myCar;
     
     //will throw exception since this car not exists
     //$myBmw = CarsFactory::create('susita');
-} catch (Exception $e){
+} catch (CarException $e){
          echo $e->getMessage();
 }
