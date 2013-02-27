@@ -27,7 +27,7 @@ Using examples
 
 We're using [Composer](http://getcomposer.org) to resolve dependencies for our
 PHP examples and tests. 
-To run example called `something` in `state` pattern, change directory to
+To run example called `car` in `state` pattern, change directory to
 `state/php`, make sure to install all dependencies:
 
 ```
@@ -37,11 +37,11 @@ composer install
 and execute test suit:
 
 ```
-vendor/bin/phpunit tests/something_test.php
+vendor/bin/phpunit example_car/car_test.php
 ```
 
-This will execute test the suit agains an example found in
-`state/php/examples/something.php`
+This will execute the test suit against code found in
+`state/php/example_car/car.php`
 
 Credits
 -------
