@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Examples\Checkout;
+<?php namespace DesignPatterns\Strategy\Example\Checkout;
 
 /*
  * Strategy Pattern in example with Pricing Calculations
@@ -11,24 +11,24 @@
 
 // Let's first define interfaces for all Strategies we will have..
 interface RegionPricingStrategy {
-  function calculateTaxes($price);
+  static function calculateTaxes($price);
 }
 interface DiscountPricingStrategy {
-  function negativeDiscount($price);
+  static function negativeDiscount($price);
 }
 
 // Now let's actually create Strategies with their own special logic..
 // So, let's say we know what Taxes algorithm is applied to all products
 // in Europe and then we can describe it in this Strategy
 class EuropePricingStrategy implements RegionPricingStrategy {
-  public function calculateTaxes($price) {
+  static public function calculateTaxes($price) {
     return $price * 20 / 100;
   }
 }
 // Let's add strategy that contains the logic required to calculate the
 // discount we subtract from the given price for VIP clients
 class VipPricingStrategy implements DiscountPricingStrategy {
-  public function negativeDiscount($price) {
+  static public function negativeDiscount($price) {
     return $price * 10 / 100 * -1;
   }
 }
@@ -39,7 +39,7 @@ class VipPricingStrategy implements DiscountPricingStrategy {
 // static method
 class Checkout {
 
-  function calculate($price, RegionPricingStrategy $countryStrategy,
+  static function calculate($price, RegionPricingStrategy $countryStrategy,
                            DiscountPricingStrategy $discountStrategy) {
     $grandPrice = $price;
     $grandPrice += $discountStrategy->negativeDiscount($price);

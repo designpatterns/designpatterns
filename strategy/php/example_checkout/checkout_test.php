@@ -1,7 +1,7 @@
 <?php
 
-require 'examples/checkout.php';
-use \DesignPatterns\State\Examples\Checkout as Example;
+require 'checkout.php';
+use \DesignPatterns\Strategy\Example\Checkout as Example;
 
 class CheckoutStrategiesTest extends PHPUnit_Framework_TestCase
 {
