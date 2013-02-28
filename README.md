@@ -21,6 +21,8 @@ To start collaborating:
 
 ### PHP
 
+Our PHP examples were tested against PHP v5.4
+
 We're using [Composer](http://getcomposer.org) to resolve dependencies for our
 PHP examples and tests.
 
