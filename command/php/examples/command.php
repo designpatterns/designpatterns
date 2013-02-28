@@ -1,4 +1,4 @@
-<?
+<?php
 // The interface so we can be sure that its a command
 interface Command {
    public function execute();

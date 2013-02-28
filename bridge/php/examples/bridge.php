@@ -1,4 +1,4 @@
-<?
+<?php
 //Drawing interface
 interface DrawingAPI {
     public function drawCircle($dX, $dY, $dRadius);

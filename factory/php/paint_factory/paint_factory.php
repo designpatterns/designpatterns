@@ -1,4 +1,4 @@
-<?
+<?php
 interface IBMW
 {
 	public function paintTo($color);

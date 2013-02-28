@@ -1,4 +1,4 @@
-<?
+<?php
 //singleton pattern
 
 class God {
