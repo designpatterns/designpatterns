@@ -1,17 +1,14 @@
-Programming Design Patterns
-===========================
+# Programming Design Patterns [![Build Status](https://secure.travis-ci.org/designpatterns/designpatterns.png?branch=master)](http://travis-ci.org/designpatterns/designpatterns)
 
 Repository with community-driven docs and examples for Programming Design
 Patterns
 
-Our mission
------------
+## Our mission
 
 We tend to build the most full and up-to-date collection of good quality
 examples and recommendations on use for all known Programming Design Patterns
 
-Collaborating
--------------
+## Collaborating
 
 To start collaborating:
 
@@ -20,8 +17,7 @@ To start collaborating:
 
 - create a ticket to start a discussion on Github
 
-Using examples
---------------
+## Using examples
 
 ### PHP
 
@@ -54,8 +50,7 @@ php car_usage.php
     ../vendor/bin/phpunit car_test.php
     ```
 
-Credits
--------
+## Credits
 
 Our work is based on external resources pretty much. Just a few of them are:
 
@@ -70,8 +65,7 @@ Our work is based on external resources pretty much. Just a few of them are:
 - [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 - [StackOverflow](http://http://stackoverflow.com)
 
-License
--------
+## License
 
 This is free and unencumbered software released into the public domain.
 
