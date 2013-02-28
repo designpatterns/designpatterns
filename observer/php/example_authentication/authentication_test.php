@@ -1,7 +1,7 @@
 <?php
 
-require 'examples/authentication.php';
-use \DesignPatterns\State\Examples\Authentication as Example;
+require 'authentication.php';
+use \DesignPatterns\Observer\Example\Authentication as Example;
 
 class AuthenticationTest extends PHPUnit_Framework_TestCase
 {
