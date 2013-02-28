@@ -26,22 +26,33 @@ Using examples
 ### PHP
 
 We're using [Composer](http://getcomposer.org) to resolve dependencies for our
-PHP examples and tests. 
-To run example called `car` in `state` pattern, change directory to
-`state/php`, make sure to install all dependencies:
+PHP examples and tests.
+
+Every PHP example contains `%EXAMPLE_NAME%_usage.php` and `%EXAMPLE_NAME%_test.php`
+files besides `%EXAMPLE_NAME%.php` file which contains the actual pattern code.
+
+Here is how I would run an example, say called `car`, in `state` pattern:
 
 ```
-composer install
+cd state/php/example_car
+php car_usage.php
 ```
 
-and execute test suit:
+..and here is how I would run it's test suit:
 
-```
-vendor/bin/phpunit example_car/car_test.php
-```
+  - Install composer dependencies:
 
-This will execute the test suit against code found in
-`state/php/example_car/car.php`
+    ```
+    cd state/php
+    composer install
+    ```
+
+  - Run test suit:
+
+    ```
+    cd example_car
+    ../vendor/bin/phpunit car_test.php
+    ```
 
 Credits
 -------

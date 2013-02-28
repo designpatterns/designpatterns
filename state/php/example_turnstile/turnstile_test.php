@@ -1,7 +1,7 @@
 <?php
 
-require 'examples/turnstile.php';
-use \DesignPatterns\State\Examples\Turnstile as Example;
+require 'turnstile.php';
+use \DesignPatterns\State\Example\Turnstile as Example;
 
 class TurnstileStateTest extends PHPUnit_Framework_TestCase
 {
