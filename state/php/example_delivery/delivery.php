@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Examples\Delivery;
+<?php namespace DesignPatterns\State\Example\Delivery;
 
 /*
  * State Pattern in example with Delivery Service
@@ -66,8 +66,3 @@ class Delivery {
     $this->currentState = $state;
   }
 }
-
-////////////////////////////////////////////////////////////////////////////
-// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
-//
-
