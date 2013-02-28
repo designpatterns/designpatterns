@@ -1,4 +1,4 @@
-<?
+<?php
 //interface for a car
 interface Car {
 	public function getDetails();
