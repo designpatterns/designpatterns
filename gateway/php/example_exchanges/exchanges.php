@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Examples\Exchanges;
+<?php namespace DesignPatterns\State\Example\Exchanges;
 
 /*
  * Gateway Pattern in example with betting exchanges
@@ -73,8 +73,3 @@ class Exchange implements ExchangeInterface {
     return $this->gateway->retrieveFunds();
   }
 }
-
-////////////////////////////////////////////////////////////////////////////
-// Usage is demonstrated in ./tests/%FILENAME_WITHOUT_EXTENSION%_test.php
-//
-
