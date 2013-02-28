@@ -1,4 +1,4 @@
-# Programming Design Patterns [![Build Status](https://secure.travis-ci.org/designpatterns/designpatterns.png?branch=master)](http://travis-ci.org/designpatterns/designpatterns)
+# Programming Design Patterns [![Build Status](https://secure.travis-ci.org/designpatterns/designpatterns.png)](http://travis-ci.org/designpatterns/designpatterns)
 
 Repository with community-driven docs and examples for Programming Design
 Patterns
