@@ -1,5 +1,7 @@
 <?php
 
+require 'stocksmarket.php';
+
 $markets = array(
 	'nasdaq' => new NasdaqGateway(),
 	'spx500' => new SPX500Gateway(),
