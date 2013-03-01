@@ -1,4 +1,4 @@
-<?
+<?php
 
 interface IStocksMarket{
 		public function buyStock($stockSign);
