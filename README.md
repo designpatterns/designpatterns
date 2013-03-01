@@ -43,6 +43,20 @@ php state/php/example_car/car_usage.php
 phpunit state/php/example_car/car_test.php
 ```
 
+If you don't have **PHPUnit** installed, you can use
+[Composer](http://getcomposer.org) to install it right inside the project:
+
+```
+composer install
+```
+
+This will create `vendor` directory with all dependencies. Running a test suite
+then can be done via:
+
+```
+vendor/bin/phpunit state/php/example_car/car_test.php
+```
+
 ## Credits
 
 Our work is based on external resources pretty much. Just a few of them are:
