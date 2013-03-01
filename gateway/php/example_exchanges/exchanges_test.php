@@ -1,7 +1,7 @@
 <?php
 
 require 'exchanges.php';
-use \DesignPatterns\State\Example\Exchanges as Example;
+use \DesignPatterns\Gateway\Example\Exchanges as Example;
 
 class ExchangesGatewayTest extends PHPUnit_Framework_TestCase
 {

@@ -1,4 +1,4 @@
-<?php namespace DesignPatterns\State\Example\Exchanges;
+<?php namespace DesignPatterns\Gateway\Example\Exchanges;
 
 /*
  * Gateway Pattern in example with betting exchanges
