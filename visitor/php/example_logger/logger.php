@@ -1,4 +1,4 @@
-<?php
+<?php namespace DesignPatterns\Visitor\Examples\Logger;
 
 /*
  * Visitor Pattern in example with Logger class
@@ -29,8 +29,7 @@ class Logger implements ILogger {
   }
 
   public function log() {
-    echo 'saving log in a default way, you know.. painting it on the wall';
-    echo "..btw the message is {$this->message}";
+    // saving $this->message in a default way, you know..
   }
 
   // Nah OK, we will accept visitors, I don't care.. it's easier then modifying
@@ -54,6 +53,10 @@ abstract class LoggerVisitor implements IVisitor {
     // we need at least message..
     $this->message = $host->getMessage();
   }
+
+  public function getMessage() {
+    return $this->message;
+  }
 }
 
 // And now we can define the real Visitors who does stuff
@@ -62,7 +65,7 @@ class EmailLogger extends LoggerVisitor implements ILogger {
   protected $message;
 
   public function log() {
-    echo "sending '{$this->message}' by email";
+    // sending $this->message by email
   }
 }
 // Let's even add another Visitor that logs a message by saving it in database
@@ -70,31 +73,9 @@ class DBLogger extends LoggerVisitor implements ILogger {
   protected $message;
 
   public function log() {
-    echo "saving '{$this->message}' in database";
+    // saving $this->message in database
   }
 }
 
-
-////////////
-// Usage
-//
-
-
-// This is how it was usually done, you know..
-$log = new Logger('this text should be logged');
-
-// However, we just realized that we need to log message in a special way..
-// But we don't want to modify Logger class, so let's initialize Visitor
-// that knows to do the stuff we want like we want
-$emailLogger  = new EmailLogger();
-
-// Grant access to Visitor ($emailLogger) to enhance functionality of $log
-$log->accept( $emailLogger );
-
-// ..and now we can use $emailLogger just like we used $log before
-// but the result will be different. Nice hacking, no?:)
-$emailLogger->log();
-
-
 // In conclusion I think Visitor pattern is more a Hack rather than way to
-// structure classes relationship in a daily basis.. What do you think?
+// structure classes relationship in a daily basis..
