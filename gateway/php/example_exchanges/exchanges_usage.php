@@ -1,7 +1,7 @@
 <?php
 
 require 'exchanges.php';
-use \DesignPatterns\State\Example\Exchanges as Example;
+use \DesignPatterns\Gateway\Example\Exchanges as Example;
 
 $exchangeX = new Example\Exchange( new Example\ExchangeXGateway );
 $exchangeX->placeBet(array(
