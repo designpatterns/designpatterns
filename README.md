@@ -21,36 +21,27 @@ To start collaborating:
 
 ### PHP
 
-Our PHP examples were tested against PHP v5.4
+Our PHP examples were tested against PHP v5.4. We're using
+[PHPUnit](http://phpunit.de) (v3.17.13 and above) to write and run test suites.
 
-We're using [Composer](http://getcomposer.org) to resolve dependencies for our
-PHP examples and tests.
+Every regular PHP example should contain following files (unless specified
+otherwise in `README` file):
 
-Every PHP example contains `%EXAMPLE_NAME%_usage.php` and `%EXAMPLE_NAME%_test.php`
-files besides `%EXAMPLE_NAME%.php` file which contains the actual pattern code.
+- `%EXAMPLE_NAME%.php` - actual pattern code
+- `%EXAMPLE_NAME%_test.php` - test suit for pattern code
+- `%EXAMPLE_NAME%_usage.php` - practical use example of pattern code
 
 Here is how I would run an example, say called `car`, in `state` pattern:
 
 ```
-cd state/php/example_car
-php car_usage.php
+php state/php/example_car/car_usage.php
 ```
 
 ..and here is how I would run it's test suit:
 
-  - Install composer dependencies:
-
-    ```
-    cd state/php
-    composer install
-    ```
-
-  - Run test suit:
-
-    ```
-    cd example_car
-    ../vendor/bin/phpunit car_test.php
-    ```
+```
+phpunit state/php/example_car/car_test.php
+```
 
 ## Credits
 
