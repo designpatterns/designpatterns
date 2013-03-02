@@ -22,7 +22,7 @@ To start collaborating:
 ### PHP
 
 Our PHP examples were tested against PHP v5.4. We're using
-[PHPUnit](http://phpunit.de) (v3.17.13 and above) to write and run test suites.
+[PHPUnit](http://phpunit.de) (at least v3.17.13) to write and run test suites.
 
 Every regular PHP example should contain following files (unless specified
 otherwise in `README` file):
