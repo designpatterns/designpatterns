@@ -31,13 +31,13 @@ otherwise in `README` file):
 - `%EXAMPLE_NAME%_test.php` - test suit for pattern code
 - `%EXAMPLE_NAME%_usage.php` - practical use example of pattern code
 
-Here is how I would run an example, say called `car`, in `state` pattern:
+Here is how you could run an example, say called `car`, in `state` pattern:
 
 ```
 php state/php/example_car/car_usage.php
 ```
 
-..and here is how I would run it's test suit:
+..and here is how you could run it's test suit:
 
 ```
 phpunit state/php/example_car/car_test.php
