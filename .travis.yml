@@ -2,3 +2,10 @@ language: php
 php:
   - 5.4
 script: find . -name "*_test.php" | xargs -I {} phpunit {} || exit 1;
+notifications:
+  email:
+    recipients:
+      - designpatternsgroup@gmail.com
+    on_success: change
+    on_failure: always
+  campfire: designpatterns:4c84039a9b682343daad2cd255de4204b245d6d8@553910
