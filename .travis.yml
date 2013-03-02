@@ -8,4 +8,4 @@ notifications:
       - designpatternsgroup@gmail.com
     on_success: change
     on_failure: always
-  campfire: designpatterns:4c84039a9b682343daad2cd255de4204b245d6d8@553910
+  webhooks: http://ancient-everglades-3871.herokuapp.com/hubot/travis?room=553910
