@@ -8,7 +8,7 @@ interface DrawingAPI {
 class DrawingAPI1 implements DrawingAPI {
  
     public function drawCircle($dX, $dY, $dRadius) {
-        echo "API1.circle at ".$dX.":".$dY." radius ".$dRadius."<br/>";
+        return "API1.circle at ".$dX.":".$dY." radius ".$dRadius ;
     }
 }
  
@@ -16,7 +16,7 @@ class DrawingAPI1 implements DrawingAPI {
 class DrawingAPI2 implements DrawingAPI {
  
     public function drawCircle($dX, $dY, $dRadius) {
-        echo "API2.circle at ".$dX.":".$dY." radius ".$dRadius."<br/>";
+        return "API2.circle at ".$dX.":".$dY." radius ".$dRadius;
     }
 }
  
@@ -52,7 +52,7 @@ class CircleShape extends Shape {
     }
  
     public function draw() {
-        $this->drawingAPI->drawCircle(
+        return $this->drawingAPI->drawCircle(
                 $this->dX,
                 $this->dY,
                 $this->dRadius
@@ -60,12 +60,3 @@ class CircleShape extends Shape {
     }
 }
  
-
-$shapes = array(
-    new CircleShape(1, 3, 7,  new DrawingAPI1()),
-    new CircleShape(5, 7, 11, new DrawingAPI2()),
-);
-
-foreach ($shapes as $shape) {
-    $shape->draw();
-}
