@@ -11,7 +11,7 @@ class Switcher {
  
    public function storeAndExecute(Command $cmd) {
       $this->history[] = $cmd; // optional 
-      $cmd->execute();        
+      return $cmd->execute();        
    }
 }
  
@@ -19,11 +19,11 @@ class Switcher {
 class Light {
  
    public function turnOn() {
-      echo ("The light is on");
+      return "The light is on";
    }
  
    public function turnOff() {
-      echo ("The light is off");
+      return "The light is off";
    }
 }
  
@@ -36,7 +36,7 @@ class FlipUpCommand implements Command {
    }
  
    public function execute(){
-      $this->theLight->turnOn();
+      return $this->theLight->turnOn();
    }
 }
  
@@ -49,21 +49,8 @@ class FlipDownCommand implements Command {
    }
  
    public function execute() {
-      $this->theLight->turnOff();
+      return $this->theLight->turnOff();
    }
 }
- 
-/* The test class or client */
-// The invoker knows nothing about the the reciever
-      $lamp = new Light();
-      $switchUp = new FlipUpCommand($lamp);
-      $switchDown = new FlipDownCommand($lamp);
- 
-      $s = new Switcher();
- 
-      $case = "off";
-      
-      if($case == "on")
-         $s->storeAndExecute($switchUp);
-      else
-         $s->storeAndExecute($switchDown);
+
+
