@@ -1,5 +1,5 @@
 <?php
-require "draw.php"
+require "draw.php";
 
 $shapes = array(
     new CircleShape(1, 3, 7,  new DrawingAPI1()),
@@ -7,5 +7,5 @@ $shapes = array(
 );
 
 foreach ($shapes as $shape) {
-    $shape->draw();
+   echo $shape->draw();
 }
