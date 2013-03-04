@@ -34,9 +34,8 @@ class CarsFactory
      // by the cars name, you may include the correct file, ot autoload it.
      if(!class_exists($name))
         throw new CarException ('this car not exist');
-        
-     	$car = new $name;
-        return $car->getDetails();
+
+     return new $name;
   }
 }
 
