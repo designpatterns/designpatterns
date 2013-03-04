@@ -1,6 +1,6 @@
 <?php
 
-require_once 'car_factory.php';
+require_once 'car.php';
 
 class CarsFactoryTest extends PHPUnit_Framework_TestCase {
 

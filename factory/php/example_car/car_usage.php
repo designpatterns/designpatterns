@@ -1,5 +1,5 @@
 <?php
-require_once "car_factory.php";
+require_once "car.php";
 
 try {
     $myCar = CarsFactory::create('bmw');
