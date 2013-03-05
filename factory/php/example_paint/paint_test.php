@@ -1,6 +1,6 @@
 <?php
 
-require_once 'paint_factory.php';
+require_once 'paint.php';
 
 class BMWFactoryTest extends PHPUnit_Framework_TestCase {
 
