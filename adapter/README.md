@@ -1,14 +1,15 @@
-Bridge pattern
+Adapter pattern
 ================
 
 ### Overview
 
-decouple an abstraction from its implementation so that the two can vary independently
+Adapter is simply a wrapper class.
 
 ### Reasons to use
 
-- when you want the abstraction seperated from the implementation 
+- when you need to match old interface to new interface.
+- when the code in not yours and you want to wrap it for your needs 
 
 ### Source
 
-- http://en.wikipedia.org/wiki/Bridge_pattern
+- http://en.wikipedia.org/wiki/Adapter_pattern
