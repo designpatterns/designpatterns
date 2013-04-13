@@ -71,6 +71,8 @@ Our work is based on external resources pretty much. Just a few of them are:
   [Martin Fowler](https://twitter.com/martinfowler)
 - [Wikipedia](http://en.wikipedia.org/wiki/Main_Page)
 - [StackOverflow](http://http://stackoverflow.com)
+- [Agile pronciples, patterns, and practive in c#] (http://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258/ref=sr_1_1?ie=UTF8&qid=1365840610&sr=8-1) by
+  [Robert C.Martin](http://en.wikipedia.org/wiki/Robert_Cecil_Martin)
 
 ## License
 
