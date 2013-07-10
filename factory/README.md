@@ -3,9 +3,10 @@ Factory pattern
 
 ### Overview
 
-Deals creating objects in the system witout knowing/specifying their location in the system.
-so we let the factory decide how to create it and manage it.
+Deals with creating objects in the system without knowing/specifying their location in the system
+
+Let the factory decide on how to create objects and how to manage them
 
 ### Reasons to use
 
-- managing many objects in easier way by single factory that desiced for us.
+- you need an abstraction layer
